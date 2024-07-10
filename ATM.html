@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="final.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the OSI Model: A Guide to Data Communications Protocols</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="LayersOfTheOsiModel.html">Layers of the OSI Model</a></li>
+            <li><a href="CommunicationsProtocols.html">Communications Protocols</a></li>
+            <li><a href="TCP IP.html">TCP/IP</a></li>
+            <li><a href="ATM.html">ATM</a></li>
+            <li><a href="FrameRelay.html">Frame Relay</a></li>
+            <li><a href="IPv6.html">IPv6</a></li>
+            <li><a href="POS.html">POS</a></li>
+            <li><a href="Citations.html">Citations</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Introduction to ATM architecture and its components</h2>
+            <p>The Asynchronous Transfer Mode (ATM) architecture is a high-speed, connection-oriented protocol used for transmitting data, voice, and video over a network. The architecture is designed to provide a flexible and scalable framework for transmitting various types of traffic, including real-time and non-real-time data. The ATM layer is responsible for error detection, correction, and flow control, while the ATM adaptation layer adapts higher-layer protocols to the ATM protocol. The ATM switch is the core component of the network, responsible for switching and routing ATM cells between different networks. The network interface connects the ATM switch to user equipment such as routers or servers, while the user equipment connects to the ATM network through the network interface. The virtual path is a logical path that connects multiple virtual channels together, while a virtual channel carries traffic between two endpoints.</p>
+        </section>
+        <section id="about">
+            <h2>Cell structure and transmission</h2>
+            <p>ATM Cell Structure:
+<li>53-byte fixed-size packet</li>
+<li>Header (5 bytes) with error correction and identification information</li>
+<li>Payload (48 bytes) for data transmission</li>
+<li>Tail (4 bytes) with cyclic redundancy check (CRC) for error detection</li>
+ATM Cell Transmission:
+<li>Asynchronous transmission with error detection and correction</li>
+<li>High-speed transmission rates: 155 Mbps to 622 Mbps</li>
+<img src="p22.jpg" alt="Image">
+</p>
+        </section>
+        <section id="contact">
+            <h2>Quality of Service (QoS) in ATM</h2>
+            <p>
+<li>Quality of Service (QoS) in Asynchronous Transfer Mode (ATM) networks is a critical aspect that ensures a guaranteed level of service quality by prioritizing and managing the transmission of data, voice, and video traffic. To achieve this, ATM networks allocate a specific amount of bandwidth for each connection to ensure sufficient capacity for high-priority traffic such as voice and video. Additionally, they control delay and jitter to prevent excessive variation in packet arrival times, which can cause packet loss or corruption.</li>
+<li>ATM networks also employ various mechanisms to enforce QoS policies, including VC-based QoS, which assigns different levels of priority to different Virtual Channels (VCs) based on the type of traffic they carry. Traffic Conditioning Routers (TCRs) are used to control the flow of traffic by policing, shaping, and marking packets. Policing discards packets that exceed the allocated bandwidth or exceed a certain threshold, while shaping regulates the rate at which packets are transmitted. Marking labels packets with priority information to enable prioritized handling at subsequent network devices.</li>
+<li>The benefits of QoS in ATM networks include guaranteed Service Level Agreements (SLAs), improved user experience, and increased network efficiency. By ensuring that high-priority traffic is delivered with predictable performance, ATM networks can guarantee a high level of quality for critical applications such as video conferencing and online gaming. Overall, QoS in ATM is essential for delivering high-quality multimedia services over IP-based networks.</li>
+</p>
+        </section>
+        
+       
+    </main>
+    <footer>
+        <p>&copy; 2024 Paulina Habbecke</p>
+    </footer>
+</body>
+</html>

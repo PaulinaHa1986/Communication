@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="final.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the OSI Model: A Guide to Data Communications Protocols</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="LayersOfTheOsiModel.html">Layers of the OSI Model</a></li>
+            <li><a href="CommunicationsProtocols.html">Communications Protocols</a></li>
+            <li><a href="TCP IP.html">TCP/IP</a></li>
+            <li><a href="ATM.html">ATM</a></li>
+            <li><a href="FrameRelay.html">Frame Relay</a></li>
+            <li><a href="IPv6.html">IPv6</a></li>
+            <li><a href="POS.html">POS</a></li>
+            <li><a href="Citations.html">Citations</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <p>TCP/IP is a suite of communication protocols that is widely used for data communication over the internet. It is a transport-layer protocol, meaning it provides reliable, error-checked delivery of data between devices on a network.</p>
+            <img src="p11.jpg" alt="Image">
+        </section>
+        <section id="about">
+            <h2>Overview of the workings of TCP/IP:</h2>
+            <p>
+<li>1. Connection Establishment
+
+When a device wants to send data over the network, it initiates a connection by sending a SYN (synchronize) packet to the destination device. This packet includes information such as the source and destination IP addresses, port numbers, and a sequence number.
+
+The destination device responds with a SYN-ACK (synchronize-acknowledgment) packet, which acknowledges the request and sends its own sequence number. The sender then sends an ACK (acknowledgment) packet to complete the three-way handshake.</li>
+<li>2. Data Segmentation
+
+Once the connection is established, the sender breaks down the data into small segments called datagrams. Each datagram is given a sequence number and an acknowledgment number.</li>
+<li>3. Data Transfer
+
+The sender sends each datagram to the destination device, which reassembles the segments into the original data using the sequence numbers.</li>
+<li>4. Error Detection and Correction
+
+TCP/IP uses several mechanisms to detect and correct errors during data transfer:
+
+Checksum: Each datagram includes a checksum, which is calculated using the datagram's contents and header information. The receiving device calculates its own checksum and compares it with the received checksum. If they don't match, the datagram is discarded.
+Sequence Number: The sequence number helps detect out-of-order delivery or duplicate datagrams.
+Acknowledgment Number: The acknowledgment number ensures that the receiving device only acknowledges datagrams that have been successfully received.</li>
+<li>5. Retransmission
+
+If a datagram is lost or corrupted during transmission, the receiving device will not acknowledge it. The sender will retransmit the datagram after a certain time period has passed.</li>
+<li>6. Connection Termination
+
+When both devices have finished sending data, they can terminate the connection by sending a FIN (finish) packet. The receiving device responds with an ACK packet to acknowledge the termination.</li>
+</p>
+        </section>
+        
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Paulina Habbecke</p>
+    </footer>
+</body>
+</html>

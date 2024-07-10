@@ -1,0 +1,14 @@
+/* print.css */
+
+body {
+    font-size: 12pt;
+    line-height: 1.4;
+}
+
+nav, footer {
+    display: none;
+}
+
+section, table, form {
+    page-break-inside: avoid;
+}
